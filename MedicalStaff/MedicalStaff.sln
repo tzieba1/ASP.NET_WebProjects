@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicianAPI", "PhysicianAPI\PhysicianAPI.csproj", "{6B63BCD2-0A04-4952-87BC-423F8AF9A97A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doctors", "Doctors\Doctors.csproj", "{63BA4DCE-EE16-4EE2-BB05-5CAB821169B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B63BCD2-0A04-4952-87BC-423F8AF9A97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B63BCD2-0A04-4952-87BC-423F8AF9A97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B63BCD2-0A04-4952-87BC-423F8AF9A97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B63BCD2-0A04-4952-87BC-423F8AF9A97A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63BA4DCE-EE16-4EE2-BB05-5CAB821169B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63BA4DCE-EE16-4EE2-BB05-5CAB821169B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63BA4DCE-EE16-4EE2-BB05-5CAB821169B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63BA4DCE-EE16-4EE2-BB05-5CAB821169B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B83FC141-EAD6-4E12-9DED-2D3900392BFB}
+	EndGlobalSection
+EndGlobal

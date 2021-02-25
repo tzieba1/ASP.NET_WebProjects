@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="throwaway.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+  <title></title>
+  <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <form id="form1" runat="server">
+    <div>
+      <h1>Heading</h1>
+      <a runat="server" href="~/WebForm1.aspx">Page 1</a>
+      &nbsp;
+      <a runat="server" href="~/WebForm2.aspx">Page 2</a>
+      <p>
+        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" />
+        &nbsp;
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+      </p>
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+      </asp:ContentPlaceHolder>
+    </div>
+  </form>
+</body>
+</html>

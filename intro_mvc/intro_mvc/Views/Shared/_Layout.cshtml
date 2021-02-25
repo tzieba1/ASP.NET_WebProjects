@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home Page - My ASP.NET Application</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form>
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="@Url.Action("Index", "Home")" class="navbar-brand">Application name</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+              <li><a href="@Url.Action("Index", "Other")">Other</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        @if (IsSectionDefined("header"))
+        {
+          @RenderSection("header", false)
+        }
+        else
+        {
+          <br/><br/>
+          <h1>Header from Layout</h1>
+        }
+      </div>
+      @RenderBody()
+      <hr />
+      <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+      </footer>
+    </form>
+  </body>
+</html>

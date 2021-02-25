@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\movie_tracker_mvc",
+    "\\movie_tracker_mvc\\Controllers",
+    "\\movie_tracker_mvc\\Models",
+    "\\movie_tracker_mvc\\Properties",
+    "\\movie_tracker_mvc\\Views",
+    "\\movie_tracker_mvc\\Views\\Shared",
+    "\\movie_tracker_mvc\\wwwroot"
+  ],
+  "SelectedNode": "\\movie_tracker_mvc\\Models\\Movie.cs",
+  "PreviewInSolutionExplorer": false
+}

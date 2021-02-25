@@ -1,0 +1,66 @@
+﻿@model IEnumerable<assignment2.Models.Car>
+
+@{
+  ViewData["Title"] = "Cars";
+}
+
+<h1>Inventory</h1>
+
+<p>
+  <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        @Html.DisplayNameFor(model => model.Make)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.Model)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.Colour)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.Year)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.PurchaseDate)
+      </th>
+      <th>
+        @Html.DisplayNameFor(model => model.Kilometres)
+      </th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var item in Model)
+    {
+      <tr>
+        <td>
+          @Html.DisplayFor(modelItem => item.Make)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.Model)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.Colour)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+          @Html.DisplayFor(modelItem => item.PurchaseDate)
+        </td>
+        <td class="float-right">
+          @Html.DisplayFor(modelItem => item.Kilometres)
+        </td>
+        <td>
+          @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+          @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+          @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
